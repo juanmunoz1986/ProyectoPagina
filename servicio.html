@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!--CSS siempre debajo del Boostrap-->
+  <link rel="stylesheet" href="css/main.css">
+
+
+  <!--Favicon icono de la pestaña-->
+  <link rel="shortcut icon" href="favicon/ACM-04.png" type="image/x-icon">
+  <link rel="icon" href="favicon/ACM-04.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <!--Barra de navgeacion, bg-secodanry le escogemos el color-->
+  <header class="container-fluid bg-dark d-flex justify-content-between">
+    <p class="text-light mb-0 p-2" id="contactanos">CONTACTANOS 321-562-2354</p>
+    <p class="text-light mb-0 p-2 ml" id="usuario"></p>
+</header>
+
+  <!--Barra de navgeacion, con navbar - expand lo hacemnos responsive. con P-3 le organizamos el padding-->
+
+  <nav class="navbar navbar-expand-lg bg-secondary p-lg-1 align-items-center" id="menu">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="inicio.html">
+        <img src="./image/ACM-Logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <p class="mi-enlace"><a class="nav-link active text-light " aria-current="page"
+                href="inicio.html">INICIO</a></p>
+          </li>
+
+          <li class="nav-item">
+            <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="servicio.html">SERVICIOS</a>
+            </p>
+          </li>
+
+          <li class="nav-item">
+            <p><a class="nav-link active text-light mi-enlace" aria-current="page"
+                href="sobrenosotros.html">NOSOTROS</a></p>
+          </li>
+
+          <li class="nav-item">
+            <p><a class="nav-link active text-light mi-enlace" aria-current="page" href="CotizaAqui.html">COTIZA AQUI</a></p>
+          </li>
+        </ul>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="email" placeholder="Correo" aria-label="Search">
+          <button class="btn " type="button" id="Suscribir">Suscribete</button>
+          <button type="button" class="btn rounded "><img src="image/person.svg" height="35" width="20" id="login"/> </button>
+        </form>
+        
+
+        
+
+
+
+      </div>
+    </div>
+  </nav>
+
+
+
+ 
+  <div id="carouselExampleControls" class="carousel slide h-50" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-bs-slide="2000">
+        <img src="./image/pulidora.jpg" class="d-block w-100" alt="slide1">
+      </div>
+
+      <div class="carousel-item" data-bs-slide="2000">
+        <img src="./image/soldador.jpg" class="d-block w-100" alt="slide2">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="./image/soldador-fecejvvn13o4.jpg" class="d-block w-100" alt="slide3">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+   
+
+  <div class="table-responsive-lg">
+    <table class="table ">
+      <br><br>
+      <tbody class="row" >
+
+        <tr class=" row col-lg-14 mx-auto text-center" >
+
+
+          <td class="col">
+            <div class="row">
+              <div >
+                <img src="image/puertas en lamina.png" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+
+              <div >
+                <h3 class="text-muted">Puertas en lamina</h3>
+
+                <button type="button" id = "Pl"class="btn btn-outline-dark  btn-lg "> <strong>Cotiza aquí</strong> </button>
+              <br><br>
+                
+                <input type="number" class="form-control" placeholder="Cant"id="PL1">
+                
+              </div>
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div>
+                <img src="image/puertas metalicas.jpg" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div >
+                <h3 class="text-muted">Puertas metalicas</h3>
+
+                <button type="button" id="P2" class="btn btn-outline-dark  btn-lg "> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL2">
+                
+              
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div class="" >
+                <img src="image/puertas de aluminio.png" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+
+              <div >
+                <h3 class="text-muted">Puertas en aluminio</h3>
+
+                <button type="button" id="P3"class="btn btn-outline-dark  btn-lg "> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL3">
+                
+             
+             
+              </div>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+
+
+
+
+
+        <tr class=" row col-lg-12 mx-auto text-center">
+
+
+          <td class="col">
+            <div class="row">
+              <div >
+                <img  src="./image/techos estructuras.jpg" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row text-center">
+
+              <div >
+                <h5 class="text-muted ">Estrucutras meralicas techos</h5>
+
+                <button type="button" class="btn btn-outline-dark  btn-lg " id="P4"> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL4">
+                
+             
+              </div>
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div>
+                <img src="./image/teja-upvc.jpg" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div >
+                <h3 class="text-muted">Techos en UPVC</h3>
+
+                <button type="button" class="btn btn-outline-dark  btn-lg " id="P5"> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL5">
+                
+              
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div class="" >
+                <img src="image/CANELES-FONDO-BLANCO.png" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+
+              <div >
+                <h3 class="text-muted">Canoas metalicas</h3>
+
+                <button type="button" class="btn btn-outline-dark  btn-lg "id="P6"> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL6">
+                
+                
+              
+              </div>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+
+        <tr class=" row col-lg-14 mx-auto text-center">
+
+
+          <td class="col">
+            <div class="row">
+              <div >
+                <img  src="image/Herrajes electricos.png" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+
+              <div >
+                <h3 class="text-muted">Herrajes electricos</h3>
+
+                <button type="button" class="btn btn-outline-dark  btn-lg " id="P7"> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL7">
+                
+              
+              </div>
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div>
+                <img src="image/pasamanos.png" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div >
+                <h3 class="text-muted">Pasamanos</h3>
+
+                <button type="button" class="btn btn-outline-dark  btn-lg " id="P8"> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL8">
+                
+              
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+              <div class="" >
+                <img src="image/ventanas de aluminio.png" class="p-1" alt="" width="180" height="160">
+              </div>
+
+            </div>
+          </td>
+
+          <td class="col">
+            <div class="row">
+
+              <div >
+                <h3 class="text-muted">Ventanas de aluminio</h3>
+
+                <button type="button" class="btn btn-outline-dark  btn-lg " id="P9"> <strong>Cotiza aquí</strong> </button>
+                <br><br>
+                <input type="number" class="form-control" placeholder="Cant"id="PL9">
+                
+              
+              </div>
+
+            </div>
+
+          </td>
+
+        </tr>
+
+
+      </tbody>
+    </table>
+  </div>
+  <br><br><br>
+
+  <div class="container-fluid">
+    <div class="row p-5 bg-secondary text-white">
+
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <a class="navbar-brand" href="#">
+          <img src="./image/ACM-Logo.png" alt="">
+        </a>
+        <p class="h5">Bello, Antioquia</p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h3">Servicios a la mano</p>
+        <div class="mb-3">
+          <a href="servicio.html" class="text-white text-decoration-none">Servicios</a>
+        </div>
+        
+        <div class="mb-3">
+          <a href="sobrenosotros.html" class="text-white text-decoration-none">Acerca de nosotros</a>
+        </div>
+
+        <div class="mb-3">
+          <a href="CotizaAqui.html" class="text-white text-decoration-none">Cotiza</a>
+        </div>
+
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h3">Redes sociales</p>
+        <div class="mb-3">
+          <a href="#" class="text-white text-decoration-none">Facebook <img src="./image/2021_Facebook_icon.svg.png" height="20px" width="20px" class="mb-1" alt="facebook icon"></a>
+        </div>
+
+        <div class="mb-3">
+          <a href="#" class="text-white text-decoration-none">Linked in <img src="./image/vecteezy_linkedin-logo-png-linkedin-icon-transparent-png_18930587_72.png" height="30px" width="30px" class="mb-2 d-" alt="Instagram icon"></a>
+        </div>
+
+        <div class="mb-3">
+          <a href="#" class="text-white text-decoration-none">Instagram <img src="./image/600px-Instagram_icon.png" height="20px" width="20px" class="mb-2" alt="Instagran icon"></a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p class="h3">Comentarios</p>
+        <div class="mb-3">
+          <a href="comentarios.html" class="text-white text-decoration-none">Comentarios y sugerencias</a>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 pt-4">
+        <p class="text-center text-white">Copyright - All rights reserved ©  Metallicas ACM 2023 </p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="assets/js/scrips.js"></script>
+  <script src="assets/js/servicio.js"></script>
+
+</body>
+
+</html>
